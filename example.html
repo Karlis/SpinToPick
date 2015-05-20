@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spin wheel</title>
+  <style type="text/css">
+    #cart canvas{ width: 320px; height: 320px; }
+  </style>
+</head>
+<body style="text-align:center;">
+  <div id="cart"></div>
+
+  <script src="spin_to_pick.js"></script>
+  <script src="hammer.min.js"></script>
+  <script src="rAF.js"></script>
+  <script type="text/javascript">
+    window.onload = function(){
+      var params = ["What shall I do?",
+        ["Party", "Study", "Work", "Exercise", "Sleep"],
+        ["#ECD078","#D95B43","#C02942","#54A4E7","#53777A"]
+      ];
+      var wheel = setup_wheel(params);
+    }
+  </script>
+</body>
+</html>
